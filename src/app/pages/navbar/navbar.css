@@ -1,0 +1,146 @@
+.navbar {
+  width: 100%;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f0e9e3;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(31, 41, 55, 0.04);
+  box-sizing: border-box;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 11px;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+}
+
+.t-logo,
+.a-logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.t-logo {
+  color: #b85f20;
+}
+
+.a-logo {
+  color: #f97316;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brand-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #292524;
+  letter-spacing: -0.3px;
+}
+
+.brand-subtitle {
+  font-size: 11px;
+  color: #a8a29e;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Date Card */
+.date-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 12px;
+  border: 1px solid #f1f0ee;
+  border-radius: 10px;
+  background-color: #fafaf9;
+}
+
+.day-indicator {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.weekend {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.weekday {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.short-day {
+  font-size: 13px;
+  font-weight: 700;
+  color: #292524;
+}
+
+.date-label {
+  font-size: 10px;
+  color: #a8a29e;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .date-card {
+    padding: 5px 8px;
+  }
+
+  .day-indicator {
+    width: 29px;
+    height: 29px;
+  }
+}

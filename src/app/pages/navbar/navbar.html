@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- Brand -->
+    <div class="brand">
+      <div class="logo-container">
+        <span class="t-logo">T's</span>
+        <span class="a-logo">AI</span>
+      </div>
+
+      <div class="brand-info">
+        <span class="brand-name">AI Assistant</span>
+        <span class="brand-subtitle">Your intelligent workspace</span>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right">
+      <div class="date-card">
+        <div class="day-indicator" [ngClass]="isWeekend ? 'weekend' : 'weekday'">
+          {{ firstLetter }}
+        </div>
+
+        <div class="date-info">
+          <span class="short-day">{{ shortDay }}</span>
+          <span class="date-label">Today</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
